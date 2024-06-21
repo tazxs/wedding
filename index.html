@@ -20,7 +20,8 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -37,10 +38,12 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0"
                                     style="letter-spacing: 2px;">Біз үйленеміз</h3>
                             </div>
-                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
-                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            <button type="button" class="btn-play mx-auto" id="playButton">
                                 <span></span>
                             </button>
+
+                            <audio id="myAudio" src="./WhatsApp Audio 2024-06-19 at 13.27.01.mp3"></audio>
+
                         </div>
                     </div>
                 </div>
@@ -48,7 +51,7 @@
         </div>
     </div>
     <!-- Carousel End -->
-    <div class="container mb-2">
+    <div class="container mb-5">
         <div class="row justify-content-center">
             <div class="col-md-6 text-center">
                 <h2 class="mt-5 lead" style="font-size: 3rem; margin-bottom: 2rem;">Құрметті қонақтар!</h2>
@@ -72,7 +75,7 @@
                 <h2>13 шілде, 2024 жыл</h2>
                 <p class="lead">Сағат 18:00-де</p>
                 <p class="lead">Мекен - жайы </p>
-                <h2 style="font-family: Bitter;" >Қандыағаш қаласы "Дастархан" мейрамханасы</h2>
+                <h2 style="font-family: Bitter;">Қандыағаш қаласы "Дастархан" мейрамханасы</h2>
 
             </div>
         </div>
@@ -88,31 +91,14 @@
             </ul>
         </div>
     </div>
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
+
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="cards">
                     <div class="card-body">
-                        <h6 class="card-title text-center text-uppercase mb-3 font-secondary display-4"style="font-family: Bitter;" > Той багдарламасы
+                        <h6 class="card-title text-center text-uppercase mb-3 font-secondary display-4"
+                            style="font-family: Bitter;"> Той багдарламасы
                         </h6>
                         <div id="content">
                             <ul class="timeline">
@@ -138,7 +124,9 @@
     </div>
     <div class="container">
         <h1 class="font-secondary display-4" style="font-family: Bitter;"> Мекен-жайымыз:</h1>
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A28f6d645362fcb2530f6589a1063275ccb8aeb101926763d55235182f487aa0f&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+        <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A28f6d645362fcb2530f6589a1063275ccb8aeb101926763d55235182f487aa0f&amp;source=constructor"
+            width="100%" height="400" frameborder="0"></iframe>
 
     </div>
 
@@ -152,18 +140,23 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="text-center">
-                        <form class="g-form" id="g-form-1" method="POST" action="https://script.google.com/macros/s/AKfycbylvfibSO9_-_LdjPQzxcjuc_smiywFA8QeWMrwO_WAqpO9TvSjjtiX1zLRbT5gPEZqmA/exec" autocomplete="off">
+                        <form class="g-form" id="g-form-1" method="POST"
+                            action="https://script.google.com/macros/s/AKfycbylvfibSO9_-_LdjPQzxcjuc_smiywFA8QeWMrwO_WAqpO9TvSjjtiX1zLRbT5gPEZqmA/exec"
+                            autocomplete="off">
                             <div class="form-row">
                                 <div class="form-group col-sm-6">
-                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Атыныз" name="Имя" />
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3"
+                                        placeholder="Атыныз" name="Имя" />
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Фамилия" name="Фамилия" />
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3"
+                                        placeholder="Фамилия" name="Фамилия" />
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-sm">
-                                    <select class="form-control bg-secondary border-0" style="height: 52px;" name="Люди">
+                                    <select class="form-control bg-secondary border-0" style="height: 52px;"
+                                        name="Люди">
                                         <option>Адам саны</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -173,12 +166,14 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Ізгі тілек білдірсеңіз" required="required" name="поздравление"></textarea>
+                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5"
+                                    placeholder="Ізгі тілек білдірсеңіз" required="required"
+                                    name="поздравление"></textarea>
                             </div>
                             <div>
                                 <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Жиберу</button>
                             </div>
-                        </form>                        
+                        </form>
                     </div>
                 </div>
             </div>
@@ -205,6 +200,21 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+var isPlaying = false;
+var audio = document.getElementById('myAudio');
+
+document.getElementById('playButton').addEventListener('click', function() {
+    if (isPlaying) {
+        audio.pause();
+        audio.currentTime = 0;
+    } else {
+        audio.play();
+    }
+    isPlaying = !isPlaying;
+});
+
+    </script>
     <script>
         (function () {
             const second = 1000,
@@ -249,7 +259,7 @@
         }());
     </script>
     <script>
-        
+
     </script>
 </body>
 
